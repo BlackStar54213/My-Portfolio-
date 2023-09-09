@@ -67,7 +67,7 @@ nav a {
 }
 
 header {
-    background-image: url(/images/colorful-ink-background-wallpaper-picjumbo-com.jpg);
+    background-image: url(./images/colorful-ink-background-wallpaper-picjumbo-com.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -273,7 +273,7 @@ main {
     background-size: cover;
     padding: 40px;
     background-attachment: fixed;
-    background-image: url(/images/romantic-tropical-beach-with-villa-and-palms-during-beautiful-sunset-picjumbo-com.jpg);
+    background-image: url(./images/romantic-tropical-beach-with-villa-and-palms-during-beautiful-sunset-picjumbo-com.jpg);
 }
 
 .facts h2 {
@@ -356,7 +356,7 @@ main {
 }
 
 .contact {
-    background-image: url(/images/big-city-at-night-with-golden-decorations-picjumbo-com.jpg);
+    background-image: url(./images/big-city-at-night-with-golden-decorations-picjumbo-com.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
