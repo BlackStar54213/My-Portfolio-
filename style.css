@@ -222,7 +222,7 @@ main {
 
 @keyframes html {
     100% {
-        width: 86%;
+        width: 90%;
     }
 }
 
@@ -232,7 +232,7 @@ main {
 
 @keyframes css {
     100% {
-        width: 76%;
+        width: 85%;
     }
 }
 
@@ -242,7 +242,7 @@ main {
 
 @keyframes js {
     100% {
-        width: 69%;
+        width: 75%;
     }
 }
 
@@ -252,7 +252,7 @@ main {
 
 @keyframes bs {
     100% {
-        width: 79%;
+        width: 90%;
     }
 }
 
@@ -262,7 +262,7 @@ main {
 
 @keyframes react {
     100% {
-        width: 69%;
+        width: 60%;
     }
 }
 
