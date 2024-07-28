@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.menucontrol {
+    display: none;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 48px;
+    position: relative;
+    height: 65%;
+    position: fixed;
+    left: 0%;
+    overflow: hidden;
+    z-index: 909;
+}
+
+nav:hover {
+    width: 200px;
+    transition: all .6s;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    position: relative;
+}
+
+nav li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-size: 19px;
+    font-family: raleway;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    width: 160px;
+    font-weight: 600;
+}
+
+nav li:hover {
+    background-color: rgba(255, 255, 255, 0.337);
+    color: black;
+    backdrop-filter: blur(4pxs);
+    transition: all .6s;
+}
+
+nav li img {
+    position: absolute;
+    left: 10px;
+    height: .76cm;
+    margin-right: 150px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-image: url(./images/colorful-ink-background-wallpaper-picjumbo-com.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.gag h3 {
+    font-size: 25px;
+}
+
+.name {
+    font-size: 90px;
+    font-family: irish grover;
+    color: white;
+}
+
+main {
+    width: 100%;
+}
+
+.about {
+    padding: 30px;
+
+}
+
+.txt {
+    background-color: rgba(197, 197, 197, 0.726);
+    padding: 30px;
+    font-size: 15px;
+    display: flex;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    flex-wrap: wrap;
+    border-left: 4px solid gold;
+    box-shadow: black 0px 0px 15px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.skills {
+    padding: 30px;
+}
+
+.about p {
+    padding: 10px;
+}
+
+.text {
+    width: 90%;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.about ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+}
+
+.about ul li {
+    padding: 13px;
+    font-size: 13px;
+}
+
+.btm p {
+    padding-top: 40px;
+    text-align: justify;
+}
+
+.me {
+    height: 8cm;
+    border-radius: 10px;
+    float: left;
+    margin: 20px;
+}
+
+#name {
+    font-size: 35px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.skills h2 {
+    margin: 10px;
+}
+
+.skilltxt {
+    box-shadow: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 50px;
+}
+
+.container {
+    margin-left: 10%;
+}
+
+.skillset {
+    text-align: left;
+}
+
+.skillset h2 {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 40px 0px 5px 0px;
+}
+
+.progress-bar {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    border: 1px solid black;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+    background-color: gold;
+}
+
+.progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+.html {
+    animation: html 1s linear forwards;
+}
+
+@keyframes html {
+    100% {
+        width: 90%;
+    }
+}
+
+.css {
+    animation: css 1s linear forwards;
+}
+
+@keyframes css {
+    100% {
+        width: 85%;
+    }
+}
+
+.js {
+    animation: js 1s linear forwards;
+}
+
+@keyframes js {
+    100% {
+        width: 75%;
+    }
+}
+
+.bs {
+    animation: bs 1s linear forwards;
+}
+
+@keyframes bs {
+    100% {
+        width: 90%;
+    }
+}
+
+.react {
+    animation: react 1s linear forwards;
+}
+
+@keyframes react {
+    100% {
+        width: 60%;
+    }
+}
+
+
+
+.facts {
+    color: white;
+    background-size: cover;
+    padding: 40px;
+    background-attachment: fixed;
+    background-image: url(./images/romantic-tropical-beach-with-villa-and-palms-during-beautiful-sunset-picjumbo-com.jpg);
+}
+
+.facts h2 {
+    font-size: 30px;
+    margin-left: 60px;
+    text-decoration: underline;
+}
+
+.items {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.facts img {
+    height: 3cm;
+}
+
+.factitem {
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+}
+
+.digit {
+    font-size: 50px;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.past {
+    padding: 40px;
+}
+
+.past h2 {
+    margin-top: 30px;
+}
+
+.card {
+    border: 1px solid black;
+    width: 270px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 360px;
+}
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    margin-top: -5px;
+    transition: all .5s;
+}
+
+.card a {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin: 4px;
+    text-decoration: none;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card img {
+    height: 150px;
+    width: 100%;
+    padding: 0%;
+}
+
+.containerdiv {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.contact {
+    background-image: url(./images/big-city-at-night-with-golden-decorations-picjumbo-com.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.425);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 300px;
+    align-items: center;
+}
+
+.media img {
+    height: 3cm;
+}
+
+.media:hover {
+    margin-top: -50px;
+    transition: all .5s;
+}
+
+.contact h2,
+.contact p {
+    font-size: x-large;
+    color: white;
+    margin-left: 5%;
+    padding: 12px;
+}
+
+.media a {
+    color: white;
+    font-family: raleway;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer {
+    font-size: 13px;
+    height: 25vh;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:750px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    nav {
+        width: 0px;
+        top: 0;
+        transition: all .6s;
+        font-size: 23px;
+    }
+
+    .name {
+        font-size: 37px;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .about {
+        padding: 3%;
+    }
+
+    .txt {
+        width: 80%;
+        margin: 0%;
+        left: 0%;
+        font-size: 11px;
+    }
+
+    .about ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about ul li {
+        padding: 6px;
+    }
+
+    .containerdiv {
+        width: 90%;
+        margin-top: 0px;
+        flex-wrap: wrap;
+    }
+
+    .past h2 {
+        padding-top: 30px;
+    }
+
+    .about img {
+        margin: 0%;
+        padding: 10px 0px;
+        border-radius: 20px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 15px 2px 2px 40px;
+        height: 400px;
+    }
+
+    .card:hover {
+        margin: 15px 2px 2px 40px;
+    }
+
+    .past {
+        padding: 0%;
+        background-color: white;
+    }
+
+    .past .card img {
+        width: 100%;
+    }
+
+    .skills {
+        margin: 3%;
+        padding: 0%;
+        width: 90%;
+        font-size: 10px;
+    }
+
+    .skilltxt {
+        padding: 25px;
+    }
+
+    .menucontrol {
+        display: block;
+        position: fixed;
+        top: 5%;
+        right: 15%;
+        z-index: 7000000;
+        padding: 6px;
+        background-color: black;
+        border-radius: 3px;
+    }
+
+    #close {
+        display: none;
+    }
+
+    .media img {
+        height: 1.5cm;
+    }
+
+    .media {
+        height: 2cm;
+        width: 2cm;
+    }
+
+    .media a {
+        font-size: 10px;
+        margin: 0%;
+    }
+
+}

@@ -1,0 +1,128 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+h2 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload {
+    width: 80%;
+    background-color: gray;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.upload form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.upload form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.upload input {
+    height: 20px;
+    width: 300px;
+    padding: 5px;
+    outline: none;
+    text-align: right;
+    border: none;
+    border-radius: 03px;
+}
+
+.upload label {
+    width: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.upload button {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px;
+    border-color: white;
+}
+
+.upload button:hover {
+    background-color: rgb(92, 92, 92);
+    transition: all .6s;
+    color: white;
+}
+
+.details {
+    width: 80%;
+    background-color: gray;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.details form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.details form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.details input {
+    height: 20px;
+    width: 300px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 03px;
+}
+
+.details label {
+    width: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.details button {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px;
+    border-color: white;
+}
+
+.details button:hover {
+    background-color: rgb(92, 92, 92);
+    transition: all .6s;
+    color: white;
+}
+
+.details textarea {
+    text-align: left;
+}

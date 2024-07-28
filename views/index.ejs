@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desmond Izu</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/icon-hamburger-white.svg" alt="" class="menucontrol" id="open" onclick="openMenu()">
+        <img src="./images/icon-close-white.svg" alt="" class="menucontrol" id="close" onclick="closeMenu()">
+        <nav id="nav">
+            <ul>
+                <li class="links"><img src="./images/icon-person.svg" alt=""><a href="#about">About</a> </li>
+                <li class="links"><a href="#skills"><img src="./images/reshot-icon-resume-L4CTDEMPY6.svg" alt="">
+                        Resume/C.V</a> </li>
+                <li class="links"><a href="#projects"><img
+                            src="./images/reshot-icon-portfolio-management-GRK8ENXBSY.svg" alt=""> Portfolio</a>
+                </li>
+                <li class="links"><a href=""><img src="./images/reshot-icon-server-FQM8D6XSJP.svg" alt="">
+                        Services</a> </li>
+                <li class="links"><a href="#contact"><img src="./images/reshot-icon-contact-R9C5JH4L2Y.svg" alt="">
+                        Contact</a> </li>
+                <li class="links"><a href="/admin"><img src="./images/icons8-login-50.png" alt="">
+                        Admin</a> </li>
+            </ul>
+        </nav>
+
+        <div class="gag">
+            <h1 class="name">
+                <%= Details[0].Name %>
+            </h1><br>
+            <h3>
+                <%= Details[0].Job %>
+            </h3>
+        </div>
+    </header>
+    <main>
+        <section class="about" id="about" data-aos="fade-right">
+            <h2>About</h2>
+            <div class="txt">
+                <div class="text">
+                    <h4>Hi my name is</h4>
+                    <h3 id="name">
+                        <%= Details[0].Name %>
+                    </h3>
+                    <p>
+                        <%= Details[0].Brief %>
+                    </p>
+                    <hr>
+                    <div class="btm">
+                        <img src="./images/me.jpg" alt="" class="me">
+                        <p>
+                            JavaScript Programmer and Web Developer
+                            Here's a list of some basic info about me. Contacts and Location... please reach out if
+                            you
+                            have any project, I am
+                            confident in my ability to bring your ideas to life!
+                        <ul>
+                            <li><strong>Freelance:</strong> Available</li>
+                            <li><strong>Phone:</strong>
+                                <%= Details[0].Contact %>
+                            </li>
+                            <li><strong>City:</strong>
+                                <%= Details[0].City %>
+                            </li>
+                            <li><strong>Degree</strong>
+                                <%= Details[0].Degree %>
+                            </li>
+                            <li><strong>Email:</strong>
+                                <%= Details[0].Email %>
+                            </li>
+                        </ul>
+                        I'm always happy to meet new people and make new friends. Feel free to reach out to me
+                        anytime, wether it's for a
+                        casual, personal or Professional project, I am always available.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="facts">
+            <h2>Facts</h2>
+            <div class="items">
+                <div class="factitem"><img src="images/reshot-icon-project-board-XBAWVMHEZT.svg" alt="">
+
+                    <h4 class="digit">
+                        <%= project.length %>
+                    </h4>
+                    <p><strong>Projects: </strong>
+                        <%= project.length %> Successful projects. Both personal and Professional.
+                    </p>
+                </div>
+                <div class="factitem"><img src="images/reshot-icon-time-K5F4NVJLWP.svg" alt="">
+
+                    <h4 class="digit">24/7</h4>
+                    <p><strong>Available Hours: </strong>I am always available, just give me a call or leave a
+                        message
+                        and
+                        expect a reply soon.</p>
+                </div>
+                <div class="factitem"><img src="images/reshot-icon-partnership-MWR7QECHDF.svg" alt="">
+
+                    <h4 class="digit">
+                        <%= Details[0].Partners %>
+                    </h4>
+                    <p><strong>Partners: </strong>
+                        <%= Details[0].Partners %> reliable and capable partners who I can trust to complete
+                            projects
+                            with..
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills" data-aos="fade-left">
+            <h2>Skills</h2>
+            <div class="skilltxt txt">
+                <p>As a developer with a passion for crafting dynamic and engaging digital experiences, I possess a
+                    diverse skill set that
+                    covers HTML, CSS, jQuery, JavaScript, and Node / Express.js. I take pride in my ability to
+                    seamlessly blend
+                    design, functionality and
+                    stunning user interface to deliver exceptional websites. Whether it's leveraging the power of
+                    CSS to bring life to
+                    layouts or employing the versatility of Python to build robust backend solutions, I approach
+                    each project with
+                    enthusiasm and professionalism. My goal is to continuously grow and adapt to emerging
+                    technologies, ensuring that my
+                    work remains at the forefront of innovation while always maintaining a friendly and approachable
+                    demeanor towards
+                    clients and team members alike.</p>
+            </div>
+            <div class="skillset">
+                <div class="container">
+                    <h2>HTML</h2>
+                    <div class="progress-bar">
+                        <div class="html"><span>90%</span></div>
+                    </div>
+                    <h2>CSS</h2>
+                    <div class="progress-bar">
+                        <div class="css"><span>85%</span></div>
+                    </div>
+                    <h2>JAVASCRIPT</h2>
+                    <div class="progress-bar">
+                        <div class="js"><span>75%</span></div>
+                    </div>
+                    <h2>BOOTSTRAP</h2>
+                    <div class="progress-bar">
+                        <div class="bs"><span>90%</span></div>
+                    </div>
+                    <h2>NODE.JS</h2>
+                    <div class="progress-bar">
+                        <div class="react"><span>60%</span></div>
+                    </div>
+
+                </div>
+            </div>
+            <p class="txt" style="margin-top: 15px;">Passionate and dedicated, I am always ready to tackle new
+                challenges and create engaging
+                digital
+                experiences.</p>
+        </section>
+        <section class="services">
+            <div class="contents">
+                <div class="servicecard"></div>
+            </div>
+        </section>
+        <section class="past" id="projects" data-aos="fade-up">
+            <h2>Past Projects</h2>
+            <div class="containerdiv">
+                <% if (project.length> 0) { %>
+                    <% for( let index=0; index < project.length; index++ ) { %>
+                        <div class="card">
+                            <div class="img">
+                                <img src="/dbimg/<%= project[index].imagePath %>" alt="">
+                            </div>
+                            <p>
+                                <strong>Title: </strong>
+                                <%= project[index].Title %><br>
+                                    <strong>Client: </strong>
+                                    <%= project[index].Client %><br>
+                                        <strong>Tech: </strong>
+                                        <%= project[index].Tech %> <br>
+                                            <strong>Design: </strong>
+                                            <%= project[index].Design %><br>
+                                                <strong>Visit: </strong><a href="<%= project[index].Link %>">Click to
+                                                    view</a><br>
+                            </p>
+                        </div>
+                        <% } %>
+                            <% } else { %>
+                                <h1>No projects have been uploaded</h1>
+                                <% } %>
+
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>click a preferred method of reaching me</p>
+            <div class="contactdiv" data-aos="fade-right">
+                <div class="media"><a href="https://github.com/BlackStar54213"><img src="./images/icons8-github-64.png"
+                            alt="" class="icon"></a></div>
+                <div class="media"><a href="https://wa.me/08155053195"><img src="./images/whatsapp.png" alt=""
+                            class="icon"></a></div>
+                <div class="media"><a href=""><img src="./images/linkein.png" alt="" class="icon"></a></div>
+                <div class="media"><a href=""><img src="./images/icon-twitter.svg" alt="" class="icon"></a></div>
+                <div class="media"><a href="mailto:izuokeme@gmail.com"><img src="./images/icons8-gmail-96.png" alt=""
+                            class="icon"></a></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2023 Designed By <a href="">Desmond Izu</a></p>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        function openMenu() {
+            document.getElementById('nav').style.width = '200px';
+            document.getElementById('close').style.display = 'block';
+            document.getElementById('open').style.display = 'none';
+        }
+
+        function closeMenu() {
+            document.getElementById('nav').style.width = '0px';
+            document.getElementById('close').style.display = 'none';
+            document.getElementById('open').style.display = 'block';
+        }
+        AOS.init({
+            duration: 2000,
+            once: true
+        });
+    </script>
+</body>
+<script>
+
+</script>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desmond Izu || Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <main>
+        <h1>Admin Dashboard</h1>
+        <section class="upload">
+            <h2>Upload New Project</h2>
+            <form action="/admin/upload" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="Title">Title</label>
+                    <input type="text" name="Title" placeholder="Project Title"><br>
+                </div>
+                <div>
+                    <label for="Client">Client</label>
+                    <input type="text" name="Client" placeholder="Client Name"><br>
+                </div>
+                <div>
+                    <label for="Tech">Tech</label>
+                    <input type="text" name="Tech" placeholder="Tech stack used in the project"><br>
+                </div>
+                <div>
+                    <label for="Design">Design by: </label>
+                    <input type="text" name="Design" placeholder="Designed by who?"><br>
+                </div>
+                <div>
+                    <label for="Link">URL link</label>
+                    <input type="url" name="Link" placeholder="URL only please"><br>
+                </div>
+                <div>
+                    <label for="Image">Thumbnail</label>
+                    <input type="file" name="Image"><br>
+                </div>
+                <button>Upload</button>
+            </form>
+        </section>
+
+        <section class="details">
+            <h2>Change personal Details</h2>
+            <form action="/admin/update" method="post" id="updateForm">
+                <div>
+                    <label for="Name"> Name</label>
+                    <input type="text" name="Name" placeholder="Your name">
+                </div>
+                <div>
+                    <label for="Brief">Brief</label>
+                    <textarea name="Brief" id="Brief">Write a little about you</textarea>
+                </div>
+                <div>
+                    <label for="Job">Job</label>
+                    <input type="text" name="Job" placeholder="What do you do">
+                </div>
+                <div>
+                    <label for="Contact">Contact</label>
+                    <input type="tel" name="Contact" placeholder="telephone number">
+                </div>
+                <div>
+                    <label for="City">City</label>
+                    <input type="text" name="City" placeholder="where do you live">
+                </div>
+                <div>
+                    <label for="Degree">Degree</label>
+                    <input type="text" name="Degree">
+                </div>
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" placeholder="example@gmail.com">
+                </div>
+                <div>
+                    <label for="Partners">Partners</label>
+                    <input type="number" name="Partners">
+                </div>
+                <button>Update</button>
+            </form>
+        </section>
+        <form action="/admin/logout" method="post">
+            <button class="logout" type="submit">Sign out</button>
+            <input type="hidden" name="_csrf" value="food">
+        </form>
+    </main>
+</body>
+
+</html>
