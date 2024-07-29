@@ -5,12 +5,12 @@ const mongoose = require('mongoose');
 const content = require("./models/content");
 const multer = require('multer');
 const passport = require('passport');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const LocalStrategy = require('passport-local');
 const adminRouter = require('./routes/admin');
 const Details = require('./models/details');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 
 
