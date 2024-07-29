@@ -11,7 +11,7 @@ const adminRouter = require('./routes/admin');
 const Details = require('./models/details');
 const app = express();
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 
 //middleware
