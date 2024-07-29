@@ -10,7 +10,7 @@ const LocalStrategy = require('passport-local');
 const adminRouter = require('./routes/admin');
 const Details = require('./models/details');
 const app = express();
-const port = 3000;
+const port = process.env.PORT ||3000;
 
 
 
