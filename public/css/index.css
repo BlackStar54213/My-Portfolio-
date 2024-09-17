@@ -32,6 +32,9 @@ header h1 {
 
 .btn {
     display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .right {
@@ -406,8 +409,7 @@ tr:hover {
     }
 
     .btn {
-        margin-left: 20px;
-        width: 80%;
+        justify-content: space-evenly;
     }
 
     .showglass {
@@ -501,7 +503,7 @@ tr:hover {
     }
 
     table {
-        width: 100%;
+        width: 92%;
     }
 
     thead {
