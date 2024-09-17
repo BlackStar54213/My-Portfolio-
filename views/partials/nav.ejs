@@ -1,0 +1,195 @@
+<style>
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 23px;
+        background-color: #011821;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+
+    nav ul a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        z-index: 3434;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #current {
+        padding: 5px 10px;
+        background-color: #003E54;
+        border-radius: 5px
+    }
+
+    @media only screen and (max-width:900px) {
+
+        #menu {
+            display: block;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0%;
+            z-index: 949494;
+        }
+
+        nav ul {
+            flex-direction: column;
+            height: 50vh;
+            position: fixed;
+            background-color: #011821;
+            width: 100vw;
+            padding: 30px 0px;
+            z-index: 494;
+            top: 7%;
+            right: 0%;
+            z-index: 4343;
+        }
+
+        #nav {
+            display: none;
+        }
+    }
+</style>
+<% if (page=='home' ) { %>
+    <nav>
+        <img src="/images/ZEE DESIGN LOGO 11 [Recovered] 1.png" alt="">
+        <ul id="nav">
+            <a href="/">
+                <li id="current">Home</li>
+            </a>
+            <a href="/portfolio">
+                <li>Portfolio</li>
+            </a>
+            <a href="/about">
+                <li>About Us</li>
+            </a>
+            <a href="/contact">
+                <li>Contact Us</li>
+            </a>
+            <a href="/admin">
+                <li>Dashboard</li>
+            </a>
+        </ul>
+        <img src="/images/icon-hamburger.svg" alt="" id="menu">
+    </nav>
+
+    <% } else if (page=='portfolio' ) { %>
+
+        <nav>
+            <img src="/images/ZEE DESIGN LOGO 11 [Recovered] 1.png" alt="">
+            <ul id="nav">
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="/portfolio">
+                    <li id="current">Portfolio</li>
+                </a>
+                <a href="/about">
+                    <li>About Us</li>
+                </a>
+                <a href="/contact">
+                    <li>Contact Us</li>
+                </a>
+                <a href="/admin">
+                    <li>Dashboard</li>
+                </a>
+            </ul>
+            <img src="/images/icon-hamburger.svg" alt="" id="menu">
+        </nav>
+        <% } else if (page=="about" ) { %>
+            <nav>
+                <img src="/images/ZEE DESIGN LOGO 11 [Recovered] 1.png" alt="">
+                <ul id="nav">
+                    <a href="/">
+                        <li>Home</li>
+                    </a>
+                    <a href="/portfolio">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="/about">
+                        <li id="current">About Us</li>
+                    </a>
+                    <a href="/contact">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="/admin">
+                        <li>Dashboard</li>
+                    </a>
+                </ul>
+                <img src="/images/icon-hamburger.svg" alt="" id="menu">
+            </nav>
+            <% } else if (page=='contact' ) { %>
+                <nav>
+                    <img src="/images/ZEE DESIGN LOGO 11 [Recovered] 1.png" alt="">
+                    <ul id="nav">
+                        <a href="/">
+                            <li>Home</li>
+                        </a>
+                        <a href="/portfolio">
+                            <li>Portfolio</li>
+                        </a>
+                        <a href="/about">
+                            <li>About Us</li>
+                        </a>
+                        <a href="/contact">
+                            <li id="current">Contact Us</li>
+                        </a>
+                        <a href="/admin">
+                            <li>Dashboard</li>
+                        </a>
+                    </ul>
+                    <img src="/images/icon-hamburger.svg" alt="" id="menu">
+                </nav>
+                <% } else if (page=='dashboard' ) { %>
+                    <nav>
+                        <img src="/images/ZEE DESIGN LOGO 11 [Recovered] 1.png" alt="">
+                        <ul id="nav">
+                            <a href="/">
+                                <li>Home</li>
+                            </a>
+                            <a href="/portfolio">
+                                <li>Portfolio</li>
+                            </a>
+                            <a href="/about">
+                                <li>About Us</li>
+                            </a>
+                            <a href="/contact">
+                                <li>Contact Us</li>
+                            </a>
+                            <a href="/admin">
+                                <li id="current">Dashboard</li>
+                            </a>
+                        </ul>
+                        <img src="/images/icon-hamburger.svg" alt="" id="menu">
+                    </nav>
+                    <% } %>
+
+                        <script>
+                            let count = 0;
+                            document.getElementById("menu").addEventListener('click', () => {
+
+                                if (count === 0) {
+                                    document.getElementById("nav").style.display = "flex";
+                                    document.getElementById('menu').setAttribute('src', "/images/icon-menu-close.svg");
+                                    count++;
+                                } else {
+                                    document.getElementById("nav").style.display = "none";
+                                    document.getElementById('menu').setAttribute('src', "/images/icon-hamburger.svg");
+                                    count--;
+                                }
+                            })
+
+                        </script>

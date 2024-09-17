@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="shortcut icon" href="/images/bglicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+        <main>
+            <h1>Upload Project</h1>
+            <form action="/admin/uploadport" id="uploadForm" enctype="multipart/form-data" method="post">
+                <div class="first">
+                    <div class="input">
+                        <label for=""><img src="/images/user.png" alt="">Project Name</label>
+                        <input type="text" name="title" placeholder="What's the project title" required>
+                    </div>
+                    <div class="input">
+                        <label for=""><img src="/images/user.png" alt="">Client Name</label>
+                        <input type="text" name="client" placeholder="who is the client" required>
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="">Software Used</label>
+                    <input type="text" name="tech" placeholder="what softwares were used" required>
+                </div>
+                <div class="input">
+                    <label for="">Design Style</label>
+                    <select name="style" id="">
+                        <option value="Mobile Design">Mobile Design</option>
+                        <option value="Ui">Ui/Ux Design</option>
+                        <option value="Brand Identity">Brand identity Design</option>
+                        <option value="Graphics">Graphics Design</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="">Project Description</label>
+                    <textarea type="text" name="description" placeholder="Description"
+                        required>Describe the Project</textarea>
+                </div>
+                <div class="input">
+                    <label for="">Images</label>
+                    <p>Upload 4 Images only</p>
+                    <p id="fileCountError" style="color:red;display:none;">You can only upload a maximum of 4 files.</p>
+                    <input type="file" name="pics" id="fileInput" multiple required>
+                </div>
+                <button class="left">Upload <img src="/images/Vector.png" alt=""></button>
+            </form>
+
+            <h2>Upload Job Experience</h2>
+            <form action="/admin/uploadexp" method="post">
+                <div class="first">
+                    <div class="input">
+                        <label for=""><img src="/images/user.png" alt="">Company Name</label>
+                        <input type="text" placeholder="What's the Company name ?" name="company" required>
+                    </div>
+                    <div class="input">
+                        <label for=""><img src="/images/user.png" alt="">Design Type</label>
+                        <input type="text" name="role" placeholder="What sort of Designer were you employed as ?"
+                            required>
+                    </div>
+                </div>
+                <button class="left">Upload</button>
+            </form>
+            <a href="/admin/logout" id="logout">Log Out</a>
+        </main>
+        <script>
+            const fileInput = document.getElementById('fileInput');
+            const form = document.getElementById('uploadForm');
+            const errorMsg = document.getElementById('fileCountError');
+
+            const maxFiles = 4;
+
+            fileInput.addEventListener('change', function () {
+                if (fileInput.files.length > maxFiles) {
+                    errorMsg.style.display = 'block';
+                    fileInput.value = '';  // Clear the input if too many files are selected
+                } else {
+                    errorMsg.style.display = 'none';
+                }
+            });
+
+            form.addEventListener('submit', function (event) {
+                if (fileInput.files.length > maxFiles) {
+                    event.preventDefault();  // Prevent form submission if too many files
+                    alert(`You can upload a maximum of ${maxFiles} files.`);
+                }
+            });
+
+        </script>
+</body>
+
+</html>

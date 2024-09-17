@@ -1,0 +1,281 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    z-index: 3;
+}
+
+header {
+    background-color: #011821;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 43px;
+    z-index: 434;
+}
+
+header p {
+    z-index: 434;
+}
+
+.circle {
+    height: 550px;
+    width: 550px;
+    background-color: #003E54;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(149px);
+    z-index: 0;
+}
+
+.r {
+    left: 0%;
+    top: 0%;
+}
+
+.t {
+    right: 0%;
+    top: 0%;
+}
+
+main {
+    background-color: #011821;
+}
+
+.catlist {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    padding-right: 44px;
+    background-color: #174F63;
+    justify-content: space-between;
+    width: 80%;
+    border-radius: 50px;
+    color: white;
+    align-items: center;
+    z-index: 3434;
+}
+
+.notice {
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.catlist a {
+    text-decoration: none;
+    color: white;
+}
+
+.catlist a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #011821;
+    transition: all .6s;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #011821;
+    z-index: 344;
+    z-index: 434;
+}
+
+#cp {
+    background-color: #011821;
+    padding: 14px 20px;
+    border-radius: 50px;
+    z-index: 434;
+}
+
+.work {
+    z-index: 3434;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img1 img {
+    width: 350px;
+
+    z-index: 343;
+}
+
+.img1 {
+    z-index: 343;
+}
+
+.work1 {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 50px;
+    z-index: 343;
+    flex-wrap: wrap;
+}
+
+img {
+    z-index: 343;
+}
+
+.secondwork {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.hello {
+    display: flex;
+    justify-content: space-between;
+}
+
+.del {
+    color: white;
+}
+
+.view {
+    background-color: #003E54;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#right {
+    transform: rotate(180deg);
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.workcard {
+    width: 400px;
+    overflow: hidden;
+}
+
+.workcard h4 {
+    font-size: 20px;
+    color: white;
+}
+
+.workcard .preview {
+    width: 100%;
+}
+
+.workname {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all {
+    background-color: #003E54;
+    border: 2px solid white;
+    width: 200px;
+    height: 45px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    justify-content: space-evenly;
+
+}
+
+.all:hover {
+    border: 1px solid white;
+    transition: all .6s;
+}
+
+.work {
+    padding: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+@media only screen and (max-width:900px) {
+    .circle {
+        display: none;
+    }
+
+    .cat {
+        width: 100%;
+        padding: 0%;
+        font-size: 8px;
+    }
+
+    .catlist {
+        width: 99%;
+        padding-right: 10px;
+        gap: 10px;
+    }
+
+    header {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding-top: 60px;
+
+    }
+
+    header p {
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .work1 section {
+        display: fle;
+        width: 43%;
+    }
+
+    .img1 img {
+        width: 100%;
+    }
+
+    .view {
+        font-size: 10px;
+    }
+
+    .del {
+        display: none;
+    }
+
+    .hello {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .btns img {
+        height: 30px;
+    }
+}

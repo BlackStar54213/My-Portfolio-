@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects</title>
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="shortcut icon" href="/images/bglicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+        <div class="circle r"></div>
+        <div class="circle t"></div>
+        <header>
+            <h1>Discover Our Creative Project</h1>
+            <p>Journey Through Our Diverse Project, Unveiling Innovation, Creativity and Excellence</p>
+
+        </header>
+        <main>
+
+            <section class="cat">
+                <% if (style=="mobile" ) { %>
+                    <ul class="catlist">
+                        <a href="/portfolio?style=mobile" id="cp">
+                            <li>Mobile App Design</li>
+                        </a>
+                        <a href="/portfolio?style=ui">
+                            <li>Ui/Ux Design</li>
+                        </a>
+                        <a href="/portfolio?style=brand">
+                            <li>Brand identity Design</li>
+                        </a>
+                        <a href="/portfolio?style=graphics">
+                            <li>Graphics Design</li>
+                        </a>
+                    </ul>
+                    <% } else if (style=='ui' ) { %>
+                        <ul class="catlist">
+                            <a href="/portfolio?style=mobile">
+                                <li style="padding-left: 30px;">Mobile App Design</li>
+                            </a>
+                            <a href="/portfolio?style=ui" id="cp">
+                                <li>Ui/Ux Design</li>
+                            </a>
+                            <a href="/portfolio?style=brand">
+                                <li>Brand identity Design</li>
+                            </a>
+                            <a href="/portfolio?style=graphics">
+                                <li>Graphics Design</li>
+                            </a>
+                        </ul>
+                        <% } else if (style=='brand' ) { %>
+                            <ul class="catlist">
+                                <a href="/portfolio?style=mobile">
+                                    <li style="padding-left: 30px;">Mobile App Design</li>
+                                </a>
+                                <a href="/portfolio?style=ui">
+                                    <li>Ui/Ux Design</li>
+                                </a>
+                                <a href="/portfolio?style=brand" id="cp">
+                                    <li>Brand identity Design</li>
+                                </a>
+                                <a href="/portfolio?style=graphics">
+                                    <li>Graphics Design</li>
+                                </a>
+                            </ul>
+                            <% } else if (style=='graphics' ) { %>
+                                <ul class="catlist">
+                                    <a href="/portfolio?style=mobile">
+                                        <li style="padding-left: 30px;">Mobile App Design</li>
+                                    </a>
+                                    <a href="/portfolio?style=ui">
+                                        <li>Ui/Ux Design</li>
+                                    </a>
+                                    <a href="/portfolio?style=brand">
+                                        <li>Brand identity Design</li>
+                                    </a>
+                                    <a href="/portfolio?style=graphics" id="cp">
+                                        <li>Graphics Design</li>
+                                    </a>
+                                </ul>
+                                <% } %>
+            </section>
+            <section class="work">
+                <% if (projects.length>0) { %>
+                    <% for( let index=0; index < projects.length; index++ ) { %>
+                        <div class="workcard">
+                            <img src="/dbimg/<%= projects[index].images[0] %>" class="preview" alt="">
+                            <div class="workname">
+                                <h4>
+                                    <%= projects[index].title %>
+                                </h4>
+                                <a href="/details?id=<%= projects[index]._id %>"><button class="all">View previous
+                                        work<img src="/images/Vector.png" alt=""></button></a>
+
+                            </div>
+                        </div>
+                        <% } %>
+                            <% } else { %>
+                                <h2 class="notice">No Projects have been Uploaded of this kind</h2>
+                                <% } %>
+
+                                    </div>
+
+            </section>
+        </main>
+        <%- include('./partials/footer.ejs') %>
+</body>
+<script>
+
+</script>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="stylesheet" href="/css/details.css">
+    <link rel="shortcut icon" href="/images/bglicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+        <header>
+            <h1><span class="z">Experience</span> Peak Creativity through Passion,
+                Precision, and Purpose</h1>
+            <p>Take a look at My Journey so Far</p>
+        </header>
+        <main>
+            <section class="dets">
+                <div class="images">
+                    <img src="/dbimg/<%= dets.images[0] %>" alt="" class="big" id="screen">
+                    <div class="thumbnails">
+                        <% for( let index=0; index < dets.images.length; index++ ) { %>
+                            <img src="/dbimg/<%= dets.images[index] %>" alt=""
+                                onclick="viewImages('/dbimg/<%= dets.images[index] %>')">
+                            <% } %>
+                    </div>
+                </div>
+                <div class="detstext">
+                    <p><span>Project Name: </span>
+                        <%= dets.title %>
+                    </p>
+                    <p><span>Software Used: </span>
+                        <%= dets.tech %>
+                    </p>
+                    <p><span>Client Name: </span>
+                        <%= dets.client %>
+                    </p>
+                    <p><span>Design Style: </span>
+                        <%= dets.style %>
+                    </p>
+                </div>
+            </section>
+            <section class="description">
+                <h2>Project description</h2>
+                <p>
+                    <%= dets.description %>
+                </p>
+            </section>
+        </main>
+        <%- include('./partials/footer.ejs') %>
+            <script>
+
+                function viewImages(newSrc) {
+                    document.getElementById('screen').setAttribute('src', newSrc);
+                }
+
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="shortcut icon" href="/images/bglicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+        <header>
+            <h1>Let's Talk</h1>
+            <p><span class="z">Reach out to us and let’s discuss,</span> We are here to listen and help you achieve your
+                goals</p>
+        </header>
+        <main>
+            <form action="/contact" method="post">
+                <div class="first">
+                    <div class="input">
+                        <label for=""><img src="/images/user.png" alt="">First Name</label>
+                        <input type="text" placeholder="First name" name="fname" required>
+                    </div>
+                    <div class="input">
+                        <label for=""><img src="/images/user.png" alt="">Last Name</label>
+                        <input type="text" placeholder="Last name" name="lname" required>
+                    </div>
+                </div>
+                <div class="input">
+                    <label for=""><img src="/images/icon.png" alt="">Email</label>
+                    <input type="email" placeholder="example@gmail.com" name="email" required>
+                </div>
+                <div class="input">
+                    <label for=""><img src="/images/Fill 77.png" alt="">Phone</label>
+                    <input type="tel" placeholder="+234 000 0000 000" name="tel" required>
+                </div>
+                <div class="input">
+                    <label for="">Message</label>
+                    <textarea type="text" placeholder="Message" name="message" required>Leave us a message</textarea>
+                </div>
+                <button class="left">Send Message <img src="/images/Vector.png" alt=""></button>
+            </form>
+        </main>
+        <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+main form {
+    width: 50%;
+
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+main input,
+textarea,
+select {
+    padding: 9px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    background-color: rgb(236, 236, 236);
+    outline: none;
+}
+
+
+main label {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    height: 30px;
+    color: #003E54B2;
+}
+
+textarea {
+    height: 300px;
+}
+
+#logout {
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #003E54;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 12%;
+    right: 2%;
+}
+
+.left {
+    background-color: #003E54;
+    border: 2px solid white;
+    width: 100%;
+    height: 45px;
+    border: none;
+    margin-top: 40px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.left:hover {
+    margin-top: 35px;
+    transition: all .4s;
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+        margin-top: 150px;
+        padding-bottom: 200px;
+    }
+
+    main form {
+        width: 90%;
+        margin-top: 50px;
+    }
+}

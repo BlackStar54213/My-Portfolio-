@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zee Designs Portfolio</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="/images/bglicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+        <header>
+            <h1><span class="z">I'm Zeeno,</span> A designer who loves
+                unveiling the World of Creative Design
+                Solutions</h1>
+            <div class="btn">
+                <a href="/contact"><button class="left">Let's Talk <img src="/images/Vector.png" alt=""></button></a>
+                <a href="/portfolio"><button class="right">Our Services</button></a>
+            </div>
+            <div class="circle r"></div>
+            <div class="red"></div>
+
+        </header>
+        <main>
+            <section class="showglass">
+                <img src="/images/Rectangle 57.png" alt="" class="image one">
+                <img src="/images/Rectangle 58.png" class="image two" alt="">
+                <img src="/images/Rectangle 59.png" class="image three" alt="">
+            </section>
+
+            <section class="offers">
+                <h2><span class="z">My Offers</span> for You </h2>
+                <p>Embark on my Design Journey: Creativity through Passion, Dedication and Precision</p>
+                <div class="container">
+                    <div class="contain">
+                        <div class="card">
+                            <img src="/images/Group 22.png" alt="">
+                            <h4>User experience</h4>
+                            <p>Crafting seamless and intuitive user journey to
+                                enhance engagement and satisfaction</p>
+                        </div>
+                    </div>
+                    <div class="contain">
+                        <div class="card">
+                            <img src="/images/Group 22 (1).png" alt="">
+                            <h4>User Interface</h4>
+                            <p>creating visual appealing interface that combine aesthetic with functionality</p>
+                        </div>
+                    </div>
+                    <div class="contain">
+                        <div class="card">
+                            <img src="/images/Group 22.png" alt="">
+                            <h4>Brand identity design</h4>
+                            <p>Creating cohesive visual representation of a brand through elements like logos,
+                                typography,
+                                and
+                                color schemes to
+                                effectively convey its values and 
+                                personality.</p>
+                        </div>
+                    </div>
+                    <div class="contain">
+                        <div class="card">
+                            <img src="/images/Group 22.png" alt="">
+                            <h4>Graphics Design</h4>
+                            <p>creating visually compelling materials, including logos, layouts, and illustrations, to
+                                communicate ideas and
+                                enhance brand identity.</p>
+                        </div>
+                    </div>
+                    <div class="contain">
+                        <div class="card">
+                            <img src="/images/Group 22.png" alt="">
+                            <h4>Mobile App design</h4>
+                            <p>Designing intuitive and user-friendly mobile application for iOS and Android platforms
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contain">
+                        <div class="card">
+                            <img src="/images/Group 22.png" alt="">
+                            <h4>Wireframing & Mockups</h4>
+                            <p>developing detail while frame and high fidelity more calls to visualize
+                                design effectively
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="prevwork">
+                <div class="prev">
+                    <h2><span class="z">Experience</span> Peak Creativity
+                        through Passion, Precision,
+                        and Purpose</h2>
+                    <div class="text"> Crafting Balanced and tailored Solution with User Interface, Typography, Colour
+                        Scheme, User Expirence and Prototyping to Elevate Your Digital Presence And
+                        Creating Lasting Impression
+                        <a href="/portfolio?style=mobile"><button class="left">View all previous work<img
+                                    src="/images/Vector.png" alt=""></button></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <% if (projects.length>0) { %>
+                        <% for( let index=0; index < projects.length; index++ ) { %>
+                            <div class="workcard">
+                                <img src="/dbimg/<%= projects[index].images[0] %>" class="preview" alt="">
+                                <div class="workname">
+                                    <h4>
+                                        <%= projects[index].title %>
+                                    </h4>
+                                    <a href="/details?id=<%= projects[index]._id %>"><button class="all">View previous
+                                            work<img src="/images/Vector.png" alt=""></button></a>
+
+                                </div>
+                            </div>
+                            <% } %>
+                                <% } else { %>
+                                    <h2>No Projects have been Uploaded</h2>
+                                    <% } %>
+
+                </div>
+            </section>
+            <section class="exp">
+                <h2>My Work <span class="z">Experience</span></h2>
+                <p>Journey Through Design: A Comprehensive Exploration of My Design Journey and Evolution</p>
+                <section class="table">
+                    <table>
+                        <thead>
+                            <th>Client</th>
+                            <th>Type of Design</th>
+                        </thead>
+                        <tbody>
+                            <% if (exp.length>0) { %>
+                                <% for( let index=0; index < exp.length; index++ ) { %>
+                                    <tr>
+                                        <td>
+                                            <%= exp[index].company %>
+                                        </td>
+                                        <td class="itemer">
+                                            <%= exp[index].role %>
+                                        </td>
+                                    </tr>
+                                    <% } %>
+                                        <% } else { %>
+                                            <h2>No work experience has been uploaded </h2>
+                                            <% } %>
+                        </tbody>
+
+                    </table>
+
+                    <a href="/about"><button class="all expp">See More<img src="/images/Vector.png" alt=""></button></a>
+                </section>
+
+            </section>
+            <center>
+                <section class="socials">
+
+                    <div class="soct">
+                        <h2>Follow us on
+                            <span class="z">Social Media</span>
+                        </h2>
+                        <p>Find out more about us by following us.</p>
+                    </div>
+                    <a href="/about"><button class="all" id="all">About Us<img src="/images/Vector.png"
+                                alt=""></button></a>
+
+                </section>
+            </center>
+        </main>
+        <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>

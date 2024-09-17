@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="shortcut icon" href="/images/bglicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <%- include('partials/nav.ejs') %>
+        <header>
+            <h1><span class="z">About</span> Us</h1>
+            <p>Journey Through Design: A Comprehensive Exploration of My Design Journey and Evolution</p>
+        </header>
+        <main>
+            <section class="row one">
+                <img src="/images/zeeno pic.jpg" alt="" class="img">
+                <div class="text">
+                    <h2>Welcome to My creative world.</h2>
+                    <p>Hello! I'm Okokon Ewomazino Gift , a passionate designer with a love for creating visually
+                        compelling and user-friendly designs. My journey in design began with a fascination for art and
+                        technology, leading me to explore various fields such as graphic design, Branding, User
+                        experience (UX), and user interface (UI) design.
+                        I bring a unique blend of creativity and technical expertise to every project I undertake. my
+                        goal is always to deliver designs that not only look stunning but also function seamlessly.
+                        Beyond the screen, I enjoy Music, Movies (Anime), Dancing And lots more. which often inspire my
+                        work and keep my creativity flowing. I'm always on the lookout for new challenges and
+                        opportunities to collaborate with like-minded individuals and teams.
+                        Feel free to explore my portfolio and get in touch if you'd like to work together or simply chat
+                        about design and creativity!</p>
+                    <div class="btn"><button class="left">Let's Talk <img src="/images/Vector.png" alt=""></button>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="row two">
+                <img src="/images/bgicon.png" alt="" class="img">
+                <div class="text">
+                    <h2>Crafting Design Solutions with Precision and Passion</h2>
+                    <p>I believe great design goes beyond aesthetics; it's about solving problems and enhancing user
+                        experiences. Every project
+                        is a chance to push boundaries and create something unique.
+                        I've collaborated with a wide range of clients, from startups to established brands, to bring
+                        their visions to life. My
+                        approach is collaborative, ensuring the final product exceeds expectations.
+                        Whether you need a brand overhaul, a new website, or fresh ideas, I'm here to help. I pride
+                        myself on attention to
+                        detail, meeting deadlines, and delivering standout designs.
+                        Explore my work, and if it resonates with you, let’s create something amazing together!</p>
+                    <div class="btn"><button class="left">Our Services <img src="/images/Vector.png" alt=""></button>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="exp">
+                <h2>My Work <span class="z">Experience</span></h2>
+                <p>Journey Through Design: A Comprehensive Exploration of My Design Journey and Evolution</p>
+                <section class="table">
+                    <table>
+                        <thead>
+                            <th>Client</th>
+                            <th>Type of Design</th>
+                        </thead>
+                        <tbody>
+                            <% if (exp.length>0) { %>
+                                <% for( let index=0; index < exp.length; index++ ) { %>
+                                    <tr>
+                                        <td>
+                                            <%= exp[index].company %> <br><span class="timeperiod">August 6th -
+                                                    present</span>
+                                        </td>
+                                        <td class="itemer">
+                                            <%= exp[index].role %>
+                                        </td>
+                                    </tr>
+                                    <% } %>
+                                        <% } else { %>
+                                            <h2>No work experience has been uploaded </h2>
+                                            <% } %>
+                        </tbody>
+
+                    </table>
+                    <div class="btnss"><a href="/Resume design (CV).pdf" download="Okokon Ewomazino CV">
+                            <button type="button">Download My CV / Resume</button>
+                        </a></button></div>
+                </section>
+
+            </section>
+        </main>
+        <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>
