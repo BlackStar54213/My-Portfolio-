@@ -277,7 +277,7 @@ tr:hover {
 
     header {
         padding-top: 150px;
-        padding-bottom: 100px;
+        height: 5vh;
     }
 
     h1 {

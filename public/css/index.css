@@ -409,7 +409,7 @@ tr:hover {
     }
 
     .btn {
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .showglass {
