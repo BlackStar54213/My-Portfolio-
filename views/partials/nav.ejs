@@ -175,21 +175,43 @@
                         </ul>
                         <img src="/images/icon-hamburger.svg" alt="" id="menu">
                     </nav>
-                    <% } %>
+                    <% } else if (page=='details' ) { %>
+                        <nav>
+                            <img src="/images/ZEE DESIGN LOGO 11 [Recovered] 1.png" alt="">
+                            <ul id="nav">
+                                <a href="/">
+                                    <li>Home</li>
+                                </a>
+                                <a href="/portfolio">
+                                    <li>Portfolio</li>
+                                </a>
+                                <a href="/about">
+                                    <li>About Us</li>
+                                </a>
+                                <a href="/contact">
+                                    <li>Contact Us</li>
+                                </a>
+                                <a href="/admin">
+                                    <li>Dashboard</li>
+                                </a>
+                            </ul>
+                            <img src="/images/icon-hamburger.svg" alt="" id="menu">
+                        </nav>
+                        <% } %>
 
-                        <script>
-                            let count = 0;
-                            document.getElementById("menu").addEventListener('click', () => {
+                            <script>
+                                let count = 0;
+                                document.getElementById("menu").addEventListener('click', () => {
 
-                                if (count === 0) {
-                                    document.getElementById("nav").style.display = "flex";
-                                    document.getElementById('menu').setAttribute('src', "/images/icon-menu-close.svg");
-                                    count++;
-                                } else {
-                                    document.getElementById("nav").style.display = "none";
-                                    document.getElementById('menu').setAttribute('src', "/images/icon-hamburger.svg");
-                                    count--;
-                                }
-                            })
+                                    if (count === 0) {
+                                        document.getElementById("nav").style.display = "flex";
+                                        document.getElementById('menu').setAttribute('src', "/images/icon-menu-close.svg");
+                                        count++;
+                                    } else {
+                                        document.getElementById("nav").style.display = "none";
+                                        document.getElementById('menu').setAttribute('src', "/images/icon-hamburger.svg");
+                                        count--;
+                                    }
+                                })
 
-                        </script>
+                            </script>
