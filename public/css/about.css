@@ -231,7 +231,11 @@ tr:hover {
     .row {
         justify-content: flex-start;
         height: initial;
-        gap: 10%;
+        gap: 05%;
+    }
+
+    main {
+        padding-top: 40px;
     }
 
     .row img {
@@ -257,6 +261,7 @@ tr:hover {
     .left {
         font-size: 10px;
         margin: 0%;
+        margin-top: 10px;
         height: 30px;
     }
 
@@ -276,8 +281,8 @@ tr:hover {
     }
 
     header {
-        padding-top: 150px;
-        height: 5vh;
+        padding-top: 90px;
+        height: 15vh;
     }
 
     h1 {
@@ -290,7 +295,17 @@ tr:hover {
     }
 
     .two {
-        margin-top: 20%;
+        margin-top: 10%;
         margin-bottom: 20px;
+    }
+
+    .exp p {
+        font-size: 12px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    thead {
+        height: 30px;
     }
 }
