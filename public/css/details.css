@@ -48,8 +48,15 @@ header p {
 
 .thumbnails {
     display: flex;
-    width: 80%;
+    width: 70%;
     justify-content: space-between;
+}
+
+#tech {
+    word-wrap: break-word;
+    width: 50%;
+    display: block;
+    text-align: right;
 }
 
 .thumbnails img {
@@ -61,13 +68,17 @@ header p {
     color: white;
     font-size: 20px;
     margin-top: 50px;
+    width: 45%;
 }
 
 .detstext p {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.detstext p span {
+.detstext p span:first-child {
     background-color: #003E54B2;
     border-radius: 5px;
     padding: 5px;
