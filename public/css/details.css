@@ -105,8 +105,13 @@ header p {
         font-size: 25px;
     }
 
-    .header {
+    header {
         height: 30vh;
+        padding-top: 76px;
+    }
+
+    header p {
+        font-size: 12px;
     }
 
     .dets {
@@ -130,6 +135,7 @@ header p {
 
     .detstext {
         font-size: 15px;
+        width: 100%;
     }
 
     .description {
