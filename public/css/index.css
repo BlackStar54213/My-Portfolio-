@@ -412,7 +412,18 @@ tr:hover {
         padding: 0%;
     }
 
+    p {
+        font-size: 14px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .socials p {
+        padding: 0%;
+    }
+
     h1 {
+        margin-top: 50px;
         font-size: 30px;
     }
 
@@ -432,7 +443,7 @@ tr:hover {
     }
 
     header {
-        padding-bottom: 80px;
+        padding-bottom: 20px;
     }
 
     h2 {
@@ -476,8 +487,8 @@ tr:hover {
     }
 
     .text button {
-        width: 230px;
-        font-size: 15px;
+        width: 170px;
+        font-size: 11px;
     }
 
     .work {
@@ -491,8 +502,19 @@ tr:hover {
         width: 100%;
     }
 
+    .expp {
+        width: 130px;
+        height: 35px;
+        font-size: 11px;
+        margin: 20px 0px 0px 0px;
+    }
+
     .workcard .all {
         font-size: 10px;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
     }
 
     .workcard h4 {
