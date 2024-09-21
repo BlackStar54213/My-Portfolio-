@@ -229,6 +229,8 @@ h2 {
 
 .workcard .preview {
     width: 100%;
+    border: 1px solid white;
+    height: 300px;
 }
 
 .workname {
@@ -486,6 +488,10 @@ tr:hover {
         margin-bottom: 30px;
     }
 
+    .workcard .preview {
+        height: 100px;
+    }
+
     .text button {
         width: 170px;
         font-size: 11px;
@@ -510,11 +516,13 @@ tr:hover {
     }
 
     .workcard .all {
-        font-size: 10px;
+        font-size: 9px;
         justify-content: center;
         gap: 10px;
         width: 100%;
         padding: 10px;
+        height: 30px;
+        border-radius: 3px;
     }
 
     .workcard h4 {
