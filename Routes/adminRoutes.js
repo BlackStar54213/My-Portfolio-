@@ -7,10 +7,18 @@ const Exp = require('../models/exp');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const multer = require('multer');
+const path = require('path');
+const fs = require('fs');
+
+
+const dbimgPath = path.join(__dirname, '../public/dbimg');
+if (!fs.existsSync(dbimgPath)) {
+    fs.mkdirSync(dbimgPath, { recursive: true });
+}
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, 'public/dbimg')
+        cb(null, dbimgPath);
     },
     filename: function (req, file, cb) {
         const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
