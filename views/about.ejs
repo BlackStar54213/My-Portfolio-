@@ -11,7 +11,7 @@
 </head>
 <%- include('./partials/loader.ejs') %>
 
-    <body  onload="hideLoader()">
+    <body onload="hideLoader()">
         <%- include('partials/nav.ejs') %>
             <header>
                 <h1><span class="z">About</span> Us</h1>
@@ -79,8 +79,7 @@
                                     <% for( let index=0; index < exp.length; index++ ) { %>
                                         <tr>
                                             <td>
-                                                <%= exp[index].company %> <br><span class="timeperiod">August 6th -
-                                                        present</span>
+                                                <%= exp[index].company %> <br>
                                             </td>
                                             <td class="itemer">
                                                 <%= exp[index].role %>

@@ -52,9 +52,9 @@ mongoose.connect(dbUri)
 
 
 app.get('/', (req, res) => {
-    Content.find()
+    Content.find().sort({ createdAt: -1 }).limit(6)
         .then((result) => {
-            Exp.find()
+            Exp.find().sort({ createdAt: -1 }).limit(4)
                 .then((result2) => {
                     res.render('index', { projects: result, exp: result2, page: "home" })
                 })
@@ -67,7 +67,7 @@ app.get('/portfolio', (req, res) => {
 
     switch (style) {
         case 'mobile':
-            Content.find({ style: 'Mobile Design' })
+            Content.find({ style: 'Mobile Design' }).sort({ createdAt: -1 })
                 .then((result) => {
                     res.render('portfolio', { projects: result, style: style, page: "portfolio" })
                 })
@@ -75,7 +75,7 @@ app.get('/portfolio', (req, res) => {
             break;
 
         case 'graphics':
-            Content.find({ style: 'Graphics' })
+            Content.find({ style: 'Graphics' }).sort({ createdAt: -1 })
                 .then((result) => {
                     res.render('portfolio', { projects: result, style: style, page: "portfolio" })
                 })
@@ -84,14 +84,14 @@ app.get('/portfolio', (req, res) => {
             break;
 
         case 'ui':
-            Content.find({ style: 'Ui' })
+            Content.find({ style: 'Ui' }).sort({ createdAt: -1 })
                 .then((result) => {
                     res.render('portfolio', { projects: result, style: style, page: "portfolio" })
                 })
                 .catch((err) => console.log(err))
             break;
         case 'brand':
-            Content.find({ style: 'Brand Identity' })
+            Content.find({ style: 'Brand Identity' }).sort({ createdAt: -1 })
                 .then((result) => {
                     res.render('portfolio', { projects: result, style: style, page: "portfolio" })
                 })
@@ -106,7 +106,7 @@ app.get('/portfolio', (req, res) => {
 
 })
 app.get('/about', (req, res) => {
-    Exp.find()
+    Exp.find().sort({ createdAt: -1 })
         .then((result2) => {
             res.render('about', { exp: result2, page: "about" })
         })
