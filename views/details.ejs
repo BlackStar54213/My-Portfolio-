@@ -10,62 +10,63 @@
     <link rel="shortcut icon" href="/images/bglicon.png" type="image/x-icon">
 </head>
 <%- include('./partials/loader.ejs') %>
-<body onload="hideLoader()">
-    <%- include('./partials/nav.ejs') %>
-        <header>
-            <h1><span class="z">Experience</span> Peak Creativity through Passion,
-                Precision, and Purpose</h1>
-            <p>Take a look at My Journey so Far</p>
-        </header>
-        <main>
-            <section class="dets">
-                <div class="images">
-                    <img src="/dbimg/<%= dets.images[0] %>" alt="" class="big" id="screen">
-                    <div class="thumbnails">
-                        <% for( let index=0; index < dets.images.length; index++ ) { %>
-                            <img src="/dbimg/<%= dets.images[index] %>" alt=""
-                                onclick="viewImages('/dbimg/<%= dets.images[index] %>')">
-                            <% } %>
+
+    <body onload="hideLoader()">
+        <%- include('./partials/nav.ejs') %>
+            <header>
+                <h1><span class="z">Experience</span> Peak Creativity through Passion,
+                    Precision, and Purpose</h1>
+                <p>Take a look at My Journey so Far</p>
+            </header>
+            <main>
+                <section class="dets">
+                    <div class="images">
+                        <img src="<%= dets.images[0] %>" alt="" class="big" id="screen">
+                        <div class="thumbnails">
+                            <% for( let index=0; index < dets.images.length; index++ ) { %>
+                                <img src="<%= dets.images[index] %>" alt=""
+                                    onclick="viewImages('<%= dets.images[index] %>')">
+                                <% } %>
+                        </div>
                     </div>
-                </div>
-                <div class="detstext">
-                    <p><span>Project Name: </span>
-                        <span>
-                            <%= dets.title %>
-                        </span>
+                    <div class="detstext">
+                        <p><span>Project Name: </span>
+                            <span>
+                                <%= dets.title %>
+                            </span>
+                        </p>
+                        <p><span>Software Used: </span>
+                            <span id="tech">
+                                <%= dets.tech %>
+                            </span>
+                        </p>
+                        <p><span>Client Name: </span>
+                            <span>
+                                <%= dets.client %>
+                            </span>
+                        </p>
+                        <p><span>Design Style: </span>
+                            <span>
+                                <%= dets.style %>
+                            </span>
+                        </p>
+                    </div>
+                </section>
+                <section class="description">
+                    <h2>Project description</h2>
+                    <p>
+                        <%= dets.description %>
                     </p>
-                    <p><span>Software Used: </span>
-                        <span id="tech">
-                            <%= dets.tech %>
-                        </span>
-                    </p>
-                    <p><span>Client Name: </span>
-                        <span>
-                            <%= dets.client %>
-                        </span>
-                    </p>
-                    <p><span>Design Style: </span>
-                        <span>
-                            <%= dets.style %>
-                        </span>
-                    </p>
-                </div>
-            </section>
-            <section class="description">
-                <h2>Project description</h2>
-                <p>
-                    <%= dets.description %>
-                </p>
-            </section>
-        </main>
-        <%- include('./partials/footer.ejs') %>
-            <script>
+                </section>
+            </main>
+            <%- include('./partials/footer.ejs') %>
+                <script>
 
-                function viewImages(newSrc) {
-                    document.getElementById('screen').setAttribute('src', newSrc);
-                }
+                    function viewImages(newSrc) {
+                        document.getElementById('screen').setAttribute('src', newSrc);
+                    }
 
-            </script>
-</body>
+                </script>
+    </body>
 
 </html>
