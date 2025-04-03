@@ -498,6 +498,11 @@ tr {
         box-sizing: border-box;
     }
 
+    .fi {
+        padding-top: 30px;
+        padding: 20px;
+    }
+
     .obj,
     .obj img {
         border-radius: 5px;
