@@ -489,7 +489,7 @@ tr {
 
     .showglass {
         display: grid;
-        grid-template-columns: 65% 30%;
+        grid-template-columns: auto auto auto auto;
         grid-template-rows: 50% auto;
         width: 100%;
         column-gap: 10px;
@@ -498,8 +498,15 @@ tr {
         box-sizing: border-box;
     }
 
+    .obj,
+    .obj img {
+        border-radius: 5px;
+    }
+
+
     header {
         padding-bottom: 20px;
+        height: 40vh;
     }
 
     h2 {
