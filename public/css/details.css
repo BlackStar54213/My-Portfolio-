@@ -3,7 +3,7 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: 'poppins';
-    background-color: #011821;
+    background-color: black;
 }
 
 header {
@@ -23,7 +23,7 @@ h1 {
 }
 
 .z {
-    color: #003E54B2;
+    color: purple;
 }
 
 header p {
@@ -44,6 +44,7 @@ header p {
 
 .big {
     width: 80%;
+    border-radius: 20px;
 }
 
 .thumbnails {
@@ -79,7 +80,7 @@ header p {
 }
 
 .detstext p span:first-child {
-    background-color: #003E54B2;
+    background-color: purple;
     border-radius: 5px;
     padding: 5px;
     margin-right: 20px;
@@ -91,7 +92,7 @@ header p {
 }
 
 .description h2 {
-    background-color: #003E54B2;
+    background-color: purple;
     color: white;
     padding: 5px;
     text-align: center;

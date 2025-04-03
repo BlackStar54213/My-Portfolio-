@@ -38,7 +38,7 @@ const transporter = nodemailer.createTransport({
     }
 });
 //database connection and server initiation
-const dbUri = "mongodb+srv://desmond:desmond54213@cluster0.d4ugy5t.mongodb.net/Zee-Portfolio-Content?retryWrites=true&w=majority&appName=Cluster0"
+const dbUri = "mongodb+srv://desmond:desmond54213@cluster0.d4ugy5t.mongodb.net/Desmond-Portfolio-Content?retryWrites=true&w=majority&appName=Cluster0"
 mongoose.connect(dbUri)
     .then(() => {
         app.listen(port, () => {
@@ -124,7 +124,9 @@ app.get('/details', (req, res) => {
         })
 })
 
-
+app.get('/register', (req, res) => {
+    res.render('register', { page: "register" });
+})
 
 app.post('/contact', (req, res) => {
     let { fname, lname, tel, email, message } = req.body

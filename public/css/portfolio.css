@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: #011821;
+    background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ header p {
 .circle {
     height: 550px;
     width: 550px;
-    background-color: #003E54;
+    background-color: rgb(227, 100, 2);
     border-radius: 50%;
     position: absolute;
     filter: blur(149px);
@@ -46,7 +46,7 @@ header p {
 }
 
 main {
-    background-color: #011821;
+    background-color: black;
 }
 
 .catlist {
@@ -54,7 +54,7 @@ main {
     list-style-type: none;
     gap: 30px;
     padding-right: 44px;
-    background-color: #174F63;
+    background-color: black;
     justify-content: space-between;
     width: 80%;
     border-radius: 50px;
@@ -78,7 +78,7 @@ main {
 .catlist a:hover {
     text-decoration: none;
     color: white;
-    background-color: #011821;
+    background-color: rgb(227, 100, 2);
     transition: all .6s;
     padding: 15px;
     border-radius: 30px;
@@ -89,13 +89,13 @@ main {
     justify-content: center;
     align-items: center;
     height: 10vh;
-    background-color: #011821;
+    background-color: black;
     z-index: 344;
     z-index: 434;
 }
 
 #cp {
-    background-color: #011821;
+    background-color: rgb(227, 100, 2);
     padding: 14px 20px;
     border-radius: 50px;
     z-index: 434;
@@ -147,7 +147,7 @@ img {
 }
 
 .view {
-    background-color: #003E54;
+    background-color: rgb(227, 100, 2);
     padding: 5px 5px;
     border-radius: 5px;
     border: none;
@@ -189,7 +189,7 @@ img {
 }
 
 .all {
-    background-color: #003E54;
+    background-color: rgb(227, 100, 2);
     border: 2px solid white;
     width: 200px;
     height: 45px;

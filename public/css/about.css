@@ -15,7 +15,7 @@ header {
 }
 
 .z {
-    color: #003E54;
+    color: rgb(227, 100, 2);
 }
 
 h1 {
@@ -41,7 +41,7 @@ h1 {
 }
 
 .left {
-    background-color: #003E54;
+    background-color: rgb(227, 100, 2);
     border: 2px solid white;
     width: 160px;
     height: 45px;
@@ -75,7 +75,7 @@ h1 {
     height: 50px;
     border-radius: 5px;
     border: none;
-    background-color: #003E54;
+    background-color: rgb(227, 100, 2);
     display: flex;
     justify-content: space-evenly;
     color: white;
@@ -89,9 +89,9 @@ h1 {
 }
 
 .btnss button:hover {
-    border: #003E54 1px solid;
+    border: rgb(227, 100, 2) 1px solid;
     background-color: white;
-    color: #003E54;
+    color: rgb(227, 100, 2);
     transition: all .6s;
 }
 
@@ -113,7 +113,8 @@ main {
 }
 
 .img {
-    width: 35%;
+    width: 30%;
+    border-radius: 20px;
 }
 
 .text {
@@ -153,7 +154,7 @@ main {
 table {
     width: 80%;
     background-color: white;
-    color: #003E54;
+    color: rgb(227, 100, 2);
     border: none;
     padding-bottom: 20px;
     z-index: 1;
@@ -178,7 +179,7 @@ th {
 }
 
 thead {
-    background-color: #003E54;
+    background-color: rgb(227, 100, 2);
     color: white;
     border: none;
     height: 80px;
@@ -199,7 +200,7 @@ td {
 }
 
 .itemer img {
-    background-color: #003E54;
+    background-color: rgb(227, 100, 2);
     border-radius: 100%;
     border: none;
     height: 27px;
@@ -215,7 +216,7 @@ tr {
 }
 
 tr:hover {
-    background-color: #003E54;
+    background-color: rgb(227, 100, 2);
     color: white;
     transition: all .3s;
 }

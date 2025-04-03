@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'poppins';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
@@ -16,8 +16,10 @@ header {
     align-items: center;
     padding-top: 70px;
     position: relative;
-    background-color: #011821;
-    padding-bottom: 170px;
+    background-color: white;
+    padding-bottom: 100px;
+    height: 80vh;
+    background-color: black;
 }
 
 header h1 {
@@ -27,7 +29,7 @@ header h1 {
 }
 
 .z {
-    color: #003E54;
+    color: rgb(227, 100, 2);
 }
 
 .btn {
@@ -42,6 +44,7 @@ header h1 {
     background-color: white;
     width: 160px;
     height: 45px;
+    color: black;
     border: none;
     font-size: 16px;
     border-radius: 5px;
@@ -56,7 +59,7 @@ header a {
 }
 
 .left {
-    background-color: #003E54;
+    background-color: rgb(227, 100, 2);
     width: 160px;
     height: 45px;
     border: none;
@@ -71,7 +74,8 @@ header a {
 }
 
 header button:hover {
-    border: 1px solid #011821;
+    border: 1px solid #333333;
+    background-color: #FF4D00;
     transition: all .4s;
 }
 
@@ -85,9 +89,9 @@ a {
 }
 
 .circle {
-    height: 550px;
-    width: 550px;
-    background-color: #003E54;
+    height: 350px;
+    width: 350px;
+    background-color: rgb(227, 100, 2);
     border-radius: 50%;
     position: absolute;
     filter: blur(149px);
@@ -101,7 +105,7 @@ a {
 .red {
     height: 550px;
     width: 550px;
-    background-color: #EA170C66;
+    background-color: gray;
     border-radius: 50%;
     position: absolute;
     filter: blur(149px);
@@ -112,24 +116,59 @@ a {
 }
 
 main {
-    background-color: #011821;
+    background-color: black;
+    padding-bottom: 50px;
+    color: white;
+
+}
+
+.fi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
 }
 
 .showglass {
+    position: relative;
+    z-index: 393;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 50% auto;
-    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    width: 90%;
     column-gap: 20px;
     row-gap: 10px;
     padding: 10px;
     box-sizing: border-box;
 }
 
+.showglass img {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    z-index: 4;
+}
+
 .image {
     width: 100%;
     z-index: 333;
 }
+
+.obj {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    background-color: red;
+}
+
+.obj:first-child {
+    grid-column: 2/span 2;
+    grid-row: 1/span 2;
+    height: 100%;
+    background-color: #003E54;
+}
+
+
 
 .one {
     grid-row: 1/span 2;
@@ -149,6 +188,11 @@ main {
     font-weight: 500;
 }
 
+.f {
+    margin-left: 149px;
+    text-align: left;
+}
+
 .container {
     width: 100%;
     margin-top: 30px;
@@ -160,7 +204,7 @@ main {
 }
 
 .card {
-    background-color: #00777B;
+    background-color: rgb(227, 100, 2);
     width: 390px;
     height: 180px;
     display: flex;
@@ -220,6 +264,8 @@ h2 {
 .workcard {
     width: 400px;
     overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid white;
 }
 
 .workcard h4 {
@@ -236,11 +282,12 @@ h2 {
 .workname {
     display: flex;
     align-items: center;
+    padding: 10px;
     justify-content: space-between;
 }
 
 .all {
-    background-color: #003E54;
+    background-color: rgb(227, 100, 2);
     border: 2px solid white;
     width: 200px;
     height: 45px;
@@ -265,7 +312,7 @@ h2 {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
@@ -284,10 +331,11 @@ h2 {
 
 table {
     width: 80%;
-    background-color: white;
-    color: #003E54;
-    border: none;
-    padding-bottom: 20px;
+    background-color: black;
+    color: #000000;
+    border: 2px solid rgb(227, 100, 2);
+    border-radius: 10px;
+    padding-bottom: 5px;
     z-index: 1;
 }
 
@@ -300,6 +348,7 @@ table {
     margin-top: 70px;
     text-align: left;
     z-index: 1;
+    border: none;
 }
 
 th {
@@ -308,10 +357,14 @@ th {
 }
 
 thead {
-    background-color: #003E54;
+
     color: white;
     border: none;
     height: 80px;
+}
+
+tbody {
+    background-color: white;
 }
 
 td {
@@ -344,11 +397,11 @@ tr {
     border-bottom: 1px solid black;
 }
 
-tr:hover {
+/* tr:hover {
     background-color: #003E54;
     color: white;
     transition: all .3s;
-}
+} */
 
 .expp {
     margin-top: 20px;
@@ -365,12 +418,13 @@ tr:hover {
     height: 180px;
     color: white;
     display: flex;
-    background-image: linear-gradient(to right, #011C27, #003E54, #011C27);
+    background-image: linear-gradient(to bottom left, black, black, rgb(227, 100, 2));
     padding: 0px 50px;
     line-height: 40px;
     position: relative;
     border-radius: 10px;
     z-index: 1;
+    border: rgb(227, 100, 2) 1px solid;
 }
 
 .soct {
@@ -571,7 +625,7 @@ tr:hover {
         padding: 00px 10px;
         height: 100px;
         align-items: center;
-        background-image: linear-gradient(to right, #011C27, #011C27, #011C27, #003E54, #011C27);
+        background-image: linear-gradient(to right, darkblue, darkblue, darkblue, #003E54, darkblue);
     }
 
     #all {
