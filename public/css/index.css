@@ -453,8 +453,16 @@ tr {
         display: none;
     }
 
+    header {
+        padding-top: 150px;
+    }
+
     .text button {
         width: 150px;
+    }
+
+    .btn {
+        padding: 70px 0px;
     }
 
     footer .top {
