@@ -453,8 +453,26 @@ tr {
         display: none;
     }
 
+    header {
+        padding-top: 150px;
+    }
+
     .text button {
         width: 150px;
+    }
+
+    .btn {
+        padding: 30px 0px 70px 0px;
+    }
+
+    main {
+        padding-top: 40px;
+    }
+
+    .btn button {
+        height: 30px;
+        width: 100px;
+        font-size: 12px;
     }
 
     footer .top {
