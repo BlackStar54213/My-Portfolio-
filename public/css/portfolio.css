@@ -80,7 +80,7 @@ main {
     color: white;
     background-color: rgb(227, 100, 2);
     transition: all .6s;
-    padding: 15px;
+    padding: 5px 20px;
     border-radius: 30px;
 }
 
