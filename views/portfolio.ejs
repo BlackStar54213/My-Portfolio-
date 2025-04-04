@@ -23,67 +23,97 @@
             <main>
 
                 <section class="cat">
-                    <% if (style=="mobile" ) { %>
+                    <% if (style=="All" ) { %>
                         <ul class="catlist">
-                            <a href="/portfolio?style=mobile" id="cp">
-                                <li>Mobile App Design</li>
+                            <a href="/portfolio?style=All" id="cp">
+                                <li>All</li>
                             </a>
-                            <a href="/portfolio?style=ui">
-                                <li>Ui/Ux Design</li>
+                            <a href="/portfolio?style=Frontend">
+                                <li>Front-End</li>
                             </a>
-                            <a href="/portfolio?style=brand">
-                                <li>Brand identity Design</li>
+                            <a href="/portfolio?style=Backend">
+                                <li>Back-End</li>
                             </a>
-                            <a href="/portfolio?style=graphics">
-                                <li>Graphics Design</li>
+                            <a href="/portfolio?style=Fullstack">
+                                <li>Full-Stack</li>
+                            </a>
+                            <a href="/portfolio?style=Mobile">
+                                <li>Mobile</li>
                             </a>
                         </ul>
-                        <% } else if (style=='ui' ) { %>
+                        <% } else if (style=='Frontend' ) { %>
                             <ul class="catlist">
-                                <a href="/portfolio?style=mobile">
-                                    <li style="padding-left: 30px;">Mobile App Design</li>
+                                <a href="/portfolio?style=All">
+                                    <li>All</li>
                                 </a>
-                                <a href="/portfolio?style=ui" id="cp">
-                                    <li>Ui/Ux Design</li>
+                                <a href="/portfolio?style=Frontend" id="cp">
+                                    <li>Front-End</li>
                                 </a>
-                                <a href="/portfolio?style=brand">
-                                    <li>Brand identity Design</li>
+                                <a href="/portfolio?style=Backend">
+                                    <li>Back-End</li>
                                 </a>
-                                <a href="/portfolio?style=graphics">
-                                    <li>Graphics Design</li>
+                                <a href="/portfolio?style=Fullstack">
+                                    <li>Full-Stack</li>
+                                </a>
+                                <a href="/portfolio?style=Mobile">
+                                    <li>Mobile</li>
                                 </a>
                             </ul>
-                            <% } else if (style=='brand' ) { %>
+                            <% } else if (style=='Backend' ) { %>
                                 <ul class="catlist">
-                                    <a href="/portfolio?style=mobile">
-                                        <li style="padding-left: 30px;">Mobile App Design</li>
+                                    <a href="/portfolio?style=All">
+                                        <li>All</li>
                                     </a>
-                                    <a href="/portfolio?style=ui">
-                                        <li>Ui/Ux Design</li>
+                                    <a href="/portfolio?style=Frontend">
+                                        <li>Front-End</li>
                                     </a>
-                                    <a href="/portfolio?style=brand" id="cp">
-                                        <li>Brand identity Design</li>
+                                    <a href="/portfolio?style=Backend" id="cp">
+                                        <li>Back-End</li>
                                     </a>
-                                    <a href="/portfolio?style=graphics">
-                                        <li>Graphics Design</li>
+                                    <a href="/portfolio?style=Fullstack">
+                                        <li>Full-Stack</li>
+                                    </a>
+                                    <a href="/portfolio?style=Mobile">
+                                        <li>Mobile</li>
                                     </a>
                                 </ul>
-                                <% } else if (style=='graphics' ) { %>
+                                <% } else if (style=='Fullstack' ) { %>
                                     <ul class="catlist">
-                                        <a href="/portfolio?style=mobile">
-                                            <li style="padding-left: 30px;">Mobile App Design</li>
+                                        <a href="/portfolio?style=All">
+                                            <li>All</li>
                                         </a>
-                                        <a href="/portfolio?style=ui">
-                                            <li>Ui/Ux Design</li>
+                                        <a href="/portfolio?style=Frontend">
+                                            <li>Front-End</li>
                                         </a>
-                                        <a href="/portfolio?style=brand">
-                                            <li>Brand identity Design</li>
+                                        <a href="/portfolio?style=Backend">
+                                            <li>Back-End</li>
                                         </a>
-                                        <a href="/portfolio?style=graphics" id="cp">
-                                            <li>Graphics Design</li>
+                                        <a href="/portfolio?style=Fullstack" id="cp">
+                                            <li>Full-Stack</li>
+                                        </a>
+                                        <a href="/portfolio?style=Mobile">
+                                            <li>Mobile</li>
                                         </a>
                                     </ul>
-                                    <% } %>
+                                    <% } else if (style=='Mobile' ) { %>
+                                        <ul class="catlist">
+                                            <a href="/portfolio?style=All">
+                                                <li>All</li>
+                                            </a>
+                                            <a href="/portfolio?style=Frontend">
+                                                <li>Front-End</li>
+                                            </a>
+                                            <a href="/portfolio?style=Backend">
+                                                <li>Back-End</li>
+                                            </a>
+                                            <a href="/portfolio?style=Fullstack">
+                                                <li>Full-Stack</li>
+                                            </a>
+                                            <a href="/portfolio?style=Mobile" id="cp">
+                                                <li>Mobile</li>
+                                            </a>
+                                        </ul>
+                                        <% } %>
                 </section>
                 <section class="work">
                     <% if (projects.length>0) { %>

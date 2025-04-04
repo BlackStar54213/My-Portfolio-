@@ -528,6 +528,12 @@ tr {
         font-size: 28px;
     }
 
+    .offers p {
+        font-size: 12px;
+        margin: 0%;
+        text-align: center;
+    }
+
     .container {
         overflow-x: scroll;
         flex-wrap: nowrap;
@@ -535,6 +541,10 @@ tr {
         align-items: center;
         padding: 0px 25px;
         padding-bottom: 40px;
+    }
+
+    .card h4 {
+        text-align: center;
     }
 
     .card {
@@ -637,7 +647,7 @@ tr {
         padding: 00px 10px;
         height: 100px;
         align-items: center;
-        background-image: linear-gradient(to right, darkblue, darkblue, darkblue, #003E54, darkblue);
+        background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), #ff7300, rgb(255, 115, 0));
     }
 
     #all {

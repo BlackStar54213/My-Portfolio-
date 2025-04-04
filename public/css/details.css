@@ -23,7 +23,7 @@ h1 {
 }
 
 .z {
-    color: purple;
+    color: rgb(227, 100, 2);
 }
 
 header p {
@@ -80,10 +80,11 @@ header p {
 }
 
 .detstext p span:first-child {
-    background-color: purple;
+    background-color: rgb(227, 100, 2);
     border-radius: 5px;
     padding: 5px;
     margin-right: 20px;
+    width: 150px;
 }
 
 .description {
@@ -92,7 +93,7 @@ header p {
 }
 
 .description h2 {
-    background-color: purple;
+    background-color: rgb(227, 100, 2);
     color: white;
     padding: 5px;
     text-align: center;
@@ -141,5 +142,10 @@ header p {
 
     .description {
         font-size: 13px;
+    }
+
+    .detstext p span:first-child {
+
+        width: 120px;
     }
 }

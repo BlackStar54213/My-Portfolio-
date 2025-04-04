@@ -66,16 +66,24 @@ app.get('/portfolio', (req, res) => {
     const style = req.query.style;
 
     switch (style) {
-        case 'mobile':
-            Content.find({ style: 'Mobile Design' }).sort({ createdAt: -1 })
+        case 'All':
+            Content.find().sort({ createdAt: -1 })
                 .then((result) => {
                     res.render('portfolio', { projects: result, style: style, page: "portfolio" })
                 })
                 .catch((err) => console.log(err))
             break;
 
-        case 'graphics':
-            Content.find({ style: 'Graphics' }).sort({ createdAt: -1 })
+        case 'Frontend':
+            Content.find({ style: 'Frontend' }).sort({ createdAt: -1 })
+                .then((result) => {
+                    res.render('portfolio', { projects: result, style: style, page: "portfolio" })
+                })
+                .catch((err) => console.log(err))
+            break;
+
+        case 'Backend':
+            Content.find({ style: 'Backend' }).sort({ createdAt: -1 })
                 .then((result) => {
                     res.render('portfolio', { projects: result, style: style, page: "portfolio" })
                 })
@@ -83,15 +91,15 @@ app.get('/portfolio', (req, res) => {
 
             break;
 
-        case 'ui':
-            Content.find({ style: 'Ui' }).sort({ createdAt: -1 })
+        case 'Fullstack':
+            Content.find({ style: 'Fullstack' }).sort({ createdAt: -1 })
                 .then((result) => {
                     res.render('portfolio', { projects: result, style: style, page: "portfolio" })
                 })
                 .catch((err) => console.log(err))
             break;
-        case 'brand':
-            Content.find({ style: 'Brand Identity' }).sort({ createdAt: -1 })
+        case 'Mobile':
+            Content.find({ style: 'Mobile' }).sort({ createdAt: -1 })
                 .then((result) => {
                     res.render('portfolio', { projects: result, style: style, page: "portfolio" })
                 })
@@ -99,7 +107,7 @@ app.get('/portfolio', (req, res) => {
 
             break;
         default:
-            res.redirect('/portfolio?style=mobile')
+            res.redirect('/portfolio?style=All')
             break;
     }
 

@@ -50,17 +50,22 @@
             flex-direction: column;
             height: 50vh;
             position: fixed;
-            background-color: #011821;
+            background-color: #5858588b;
             width: 100vw;
             padding: 30px 0px;
             z-index: 494;
             top: 7%;
-            right: 0%;
+            right: 10%;
             z-index: 4343;
+            backdrop-filter: blur(10px);
+            border-radius: 9px;
         }
 
         #nav {
-            display: none;
+            /* display: none; */
+            width: 0%;
+            overflow: hidden;
+            transition: all 0.5s ease;
         }
     }
 </style>
@@ -205,11 +210,11 @@
                                 document.getElementById("menu").addEventListener('click', () => {
 
                                     if (count === 0) {
-                                        document.getElementById("nav").style.display = "flex";
+                                        document.getElementById("nav").style.width = "80%";
                                         document.getElementById('menu').setAttribute('src', "/images/icon-menu-close.svg");
                                         count++;
                                     } else {
-                                        document.getElementById("nav").style.display = "none";
+                                        document.getElementById("nav").style.width = "0%";
                                         document.getElementById('menu').setAttribute('src', "/images/icon-hamburger.svg");
                                         count--;
                                     }
