@@ -141,7 +141,7 @@ app.post('/contact', (req, res) => {
 
     const mailOptions = {
         from: email, // sender address
-        to: 'okokonewomazino@gmail.com',                      // list of receivers
+        to: 'izuokeme@gmail.com',                      // list of receivers
         subject: 'Message from portfolio',            // Subject line
         text: `My name is ${fname} ${lname}.\n Email: ${email},\n Phone number: ${tel},\n Message: ${message}`                   // plain text body
     };
@@ -150,6 +150,6 @@ app.post('/contact', (req, res) => {
         if (error) {
             return res.status(500).send(error);
         }
-        res.status(200).redirect('/');
+        res.status(200).redirect('/contact');
     });
 })
