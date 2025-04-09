@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-size: 16px;
     font-family: 'poppins';
 }
 
@@ -16,6 +17,7 @@ header {
 
 .z {
     color: rgb(227, 100, 2);
+    font-size: 30px;
 }
 
 h1 {
@@ -107,13 +109,13 @@ main {
     display: flex;
     height: 340px;
     width: 90%;
-    font-size: 14px;
+    font-size: 16px;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .img {
-    width: 30%;
+    height: 400px;
     border-radius: 20px;
 }
 
@@ -122,7 +124,7 @@ main {
 }
 
 .text h2 {
-    font-size: 37px;
+    font-size: 40px;
     font-weight: 400;
 }
 
@@ -130,6 +132,7 @@ main {
     flex-direction: row-reverse;
     margin-top: 150px;
     margin-bottom: 150px;
+    gap: 90px;
 }
 
 .right {
@@ -149,12 +152,13 @@ main {
 .exp h2 {
     text-align: center;
     width: 100%;
+    font-size: 30px;
 }
 
 table {
     width: 80%;
     background-color: white;
-    color: rgb(227, 100, 2);
+    /* color: rgb(227, 100, 2); */
     border: none;
     padding-bottom: 20px;
     z-index: 1;
@@ -227,6 +231,20 @@ tr:hover {
 
 }
 
+.textx {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.textx h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
 
 @media only screen and (max-width:900px) {
     .row {
