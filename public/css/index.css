@@ -265,7 +265,7 @@ h2 {
     width: 400px;
     overflow: hidden;
     border-radius: 10px;
-    border: 2px solid white;
+
 }
 
 .workcard h4 {
@@ -275,7 +275,7 @@ h2 {
 
 .workcard .preview {
     width: 100%;
-    border: 1px solid white;
+    border-radius: 15px;
     height: 300px;
 }
 
@@ -425,6 +425,10 @@ tr {
     border-radius: 10px;
     z-index: 1;
     border: rgb(227, 100, 2) 1px solid;
+}
+
+body {
+    background-color: black;
 }
 
 .soct {
@@ -595,7 +599,7 @@ tr {
         display: grid;
         grid-template-columns: 45% 45%;
         padding: 0%;
-        gap: 40px;
+
     }
 
     .workcard {
@@ -614,9 +618,13 @@ tr {
         justify-content: center;
         gap: 10px;
         width: 100%;
-        padding: 10px;
-        height: 30px;
+        padding: 5px;
+        height: 20px;
         border-radius: 3px;
+    }
+
+    .workcard img {
+        height: 10px;
     }
 
     .workcard h4 {
