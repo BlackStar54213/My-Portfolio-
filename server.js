@@ -76,16 +76,33 @@ app.get('/portfolio', (req, res) => {
 
         case 'Frontend':
             Content.find({ style: 'Frontend' }).sort({ createdAt: -1 })
-                .then((result) => {
-                    res.render('portfolio', { projects: result, style: style, page: "portfolio" })
+                .then((result1) => {
+                    Content.find({ style: 'Fullstack' }).sort({ createdAt: -1 })
+                        .then((result2) => {
+                            const result = result1.concat(result2);
+                            console.log(result);
+
+                            res.render('portfolio', { projects: result, style: style, page: "portfolio" });
+                        })
+                        .catch((err) => console.log(err))
+
                 })
                 .catch((err) => console.log(err))
+
             break;
 
         case 'Backend':
             Content.find({ style: 'Backend' }).sort({ createdAt: -1 })
-                .then((result) => {
-                    res.render('portfolio', { projects: result, style: style, page: "portfolio" })
+                .then((result1) => {
+                    Content.find({ style: 'Fullstack' }).sort({ createdAt: -1 })
+                        .then((result2) => {
+                            const result = result1.concat(result2);
+                            console.log(result);
+
+                            res.render('portfolio', { projects: result, style: style, page: "portfolio" });
+                        })
+                        .catch((err) => console.log(err))
+
                 })
                 .catch((err) => console.log(err))
 
