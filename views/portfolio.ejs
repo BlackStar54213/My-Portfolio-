@@ -115,27 +115,29 @@
                                         </ul>
                                         <% } %>
                 </section>
-                <section class="work">
-                    <% if (projects.length>0) { %>
-                        <% for( let index=0; index < projects.length; index++ ) { %>
-                            <div class="workcard">
-                                <img src="<%= projects[index].images[0] %>" class="preview" alt="">
-                                <div class="workname">
-                                    <h4>
-                                        <%= projects[index].title %>
-                                    </h4>
-                                    <a href="/details?id=<%= projects[index]._id %>"><button class="all">View
-                                            Details<img src="/images/Vector.png" alt=""></button></a>
+                <section class="dg">
+                    <section class="work">
+                        <% if (projects.length>0) { %>
+                            <% for( let index=0; index < projects.length; index++ ) { %>
+                                <div class="workcard">
+                                    <img src="<%= projects[index].images[0] %>" class="preview" alt="">
+                                    <div class="workname">
+                                        <h4>
+                                            <%= projects[index].title %>
+                                        </h4>
+                                        <a href="/details?id=<%= projects[index]._id %>"><button class="all">View
+                                                Details<img src="/images/Vector.png" alt=""></button></a>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <% } %>
-                                <% } else { %>
-                                    <h2 class="notice">No Projects have been Uploaded of this kind</h2>
-                                    <% } %>
+                                <% } %>
+                                    <% } else { %>
+                                        <h2 class="notice">No Projects have been Uploaded of this kind</h2>
+                                        <% } %>
 
-                                        </div>
+                                            </div>
 
+                    </section>
                 </section>
             </main>
             <%- include('./partials/footer.ejs') %>
